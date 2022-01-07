@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <title>Hello Pizza</title>
+    <link rel="shortcut icon" href="Images/PizzaIcon.ico">
+</head>
+
+<body>
+    <div class="IconsTop">
+        <a href="index-login.html"><i class="material-icons">login</i></a>
+    </div>
+
+    <div id="Ellipse1" style="z-index: 1;">
+        <span id="HelloPizzaText">Hello Pizza</span>
+        <span id="PizzaLikeAtHomeText"> Pizza like at Home </span>
+    </div>
+    <nav id="Navigations">
+        <ul>
+            <li><a href="#NewsSection">News</a></li>
+            <li id="NavLine"></li>
+            <li><a href="#OurMenuSection">Our Menu</a></li>
+            <li id="NavLine"></li>
+            <li><a href="#AboutUsSection">About us</a></li>
+            <li id="NavLine"></li>
+            <li><a href="#ContactsSection">Contacts</a></li>
+        </ul>
+    </nav>
+    <div id="JoinUs">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+    </div>
+
+
+    <div id="NewsSection">
+        <div class="NewNewsTitle">New News
+            <div class="NewNewsTitleUnderline"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="©">© 2021 Hello Pizza.</div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader" style="z-index: 3;">
+        <div class="box">
+            <div class="b b1"></div>
+            <div class="b b2"></div>
+            <div class="b b3"></div>
+            <div class="b b4"></div>
+        </div>
+    </div>
+    <script>
+
+        window.onload = function () {
+
+            let preloader = document.getElementById('preloader');
+            preloader.classList.add('hide-preloader');
+            setTimeout(function () {
+                preloader.classList.add('preloader-hidden');
+            }, 950)
+        }
+    </script>
+</body>
+
+</html>

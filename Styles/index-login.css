@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background-color: #898c95;
+}
+.Login{
+    width: 430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background-color: #E9EAEE;
+    box-shadow: 13px 13px 20px #676971,
+                -13px -13px 20px #C8C9D1;
+}
+.Logo{
+    background:url(../Images/pizza.png);
+    align-items: center;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    margin:0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f,
+                0px 0px 0px 5px #ecf0f3,
+                8px 8px 15px #a7aaaf,
+                -8px -8px 15px #ffffff;
+}
+.Title{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+.Fields{
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+}
+.Fields input{
+    width: 80%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+.username, .password{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
+.Fields img{
+    height: 22px;
+    margin: 0 10px -5px 25px;
+}
+.Singin-Button{
+   outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Special Elite', cursive;
+    color: #fff;
+    text-align: center;
+    background: #6e492e;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+.Singin-Button:hover{
+    background: #8a552d;
+}
+.Singin-Button:active{
+    background: #543723;
+}
+
+#back{
+    color: #aaa;
+    font-size:30px;
+    transition: .5s;
+}
+#back:hover{
+    color: #555;
+    /*font-size: 30px;*/
+}
+.backText{
+    text-transform: none;
+    letter-spacing: 2px;
+    position: absolute;
+    visibility: visible;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: 38px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.Link{
+    padding-top: 22px;
+    text-align: center;
+}
+.Link a{
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+    transition: .5s;
+}
+.Link a:hover{
+    color: #737373
+}
+ 
+#preloader{
+    background: #53535B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader.hide-preloader{
+    animation: hidePreloader 1s;
+}
+#preloader.preloader-hidden{
+    display: none;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.box .b{
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-top: 4px solid transparent !important;
+    border-bottom: 4px solid transparent !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ro 3s infinite;
+}
+.box .b1{
+    border-color: #A4B87D;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0.1s;
+}
+.box .b2{
+    border-color: #4EA851;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.2s;
+}
+.box .b3{
+    border-color: #C50005;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.3s;
+}
+.box .b4{
+    border-color: #EFEDE0;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.4s;
+}
+@keyframes ro{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50%{
+        transform: translate(-50%, -50%) rotate(-180deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+@keyframes hidePreloader{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

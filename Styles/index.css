@@ -1,0 +1,254 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Images/PizzaBg.jpeg); 
+}
+.IconsTop{
+    position: absolute;
+    top: 20px;
+    left: 1255px;
+    word-spacing: 30px;
+    font-size: 30px;
+}
+/*
+?лучше color: #b3b3b3 или color: darkgoldenrod
+*/
+
+#Ellipse1{
+    background: rgba(158, 72, 23, 0.51);
+    border-radius: 10% 90% 20% 80%;
+    position: absolute;
+    width: 706.03px;
+    height: 147.5px;
+    left: 687px;
+    top: 116px;
+}
+#HelloPizzaText{
+    position: absolute;
+    width: 511px;
+    height: 100px;
+    left: 17px;
+    top: -20px;
+    font-family: 'Fredericka the Great', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 118px;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 24px 9px 3px rgba(0, 0, 0, 0.51);
+}
+#PizzaLikeAtHomeText{
+    position: absolute;
+    width: 424px;
+    height: 40px;
+    left: 270px;
+    top: 80px;
+    font-family: 'Special Elite', cursive;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 24px 9px 3px rgba(0, 0, 0, 0.51);
+}
+nav ul{
+    list-style: none;
+    position: absolute;
+    width: 530px;
+    height: 20px;
+    left: 800px;
+    top: 450px;
+}
+nav ul li{
+    display: inline-block;
+    margin:-10px;
+}
+#NavLine{
+    border: 1px solid #FFFFFF;
+    width: 60px;
+    margin-bottom: 5px;
+    transform: rotate(90deg);
+    }
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: Special Elite;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 148.5%;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all .5s;
+    
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+nav ul li a:hover {
+        color: #b3b3b3;
+        background-size: 100% 2px;
+    }
+#JoinUs{
+    position: absolute;
+    top: 720px;
+    left:1075px;
+    word-spacing: 30px;
+    font-size: 30px;
+}
+div a i{
+    color: #FFFFFF;
+    transition: all .5s;
+}
+div a i:hover{
+    color: #b3b3b3;
+} 
+.©{
+    color: #b3b3b3;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+
+#NewsSection{
+    background-image: url(../Images/Table.jpeg);
+    background-size: 100%;
+    position: absolute;
+    top:101%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
+}
+.NewNewsTitle{
+    position: absolute;
+    text-transform: uppercase;
+    top: 6%;
+    left: 3%;
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    font-size: 40px;
+    cursor:default;
+    letter-spacing: 6px;
+}
+.NewNewsTitleUnderline{
+    position: absolute;
+    top: 103%;
+    left: -3%;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: 285px;
+    transition: all .5s;
+    
+}
+.NewNewsTitle:hover .NewNewsTitleUnderline{
+    left: 16%;
+}
+
+
+
+/*Footer*/
+.footer{
+    background-size: 100%;
+    position: absolute;
+    top:184%;
+    left: 0%;
+    width: 100%;
+    height: 17%;
+    background: #555;
+    box-shadow: 0px 0px 500px #ffffff;
+}
+/* Preloader */
+#preloader{
+    background: #53535B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader.hide-preloader{
+    animation: hidePreloader 1s;
+}
+#preloader.preloader-hidden{
+    display: none;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.box .b{
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-top: 4px solid transparent !important;
+    border-bottom: 4px solid transparent !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ro 3s infinite;
+}
+.box .b1{
+    border-color: #A4B87D;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0.1s;
+}
+.box .b2{
+    border-color: #4EA851;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.2s;
+}
+.box .b3{
+    border-color: #C50005;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.3s;
+}
+.box .b4{
+    border-color: #EFEDE0;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.4s;
+}
+@keyframes ro{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50%{
+        transform: translate(-50%, -50%) rotate(-180deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+@keyframes hidePreloader{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

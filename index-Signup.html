@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="Images/lock.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <a href="https://icons8.com/icon/99268/person"></a>
+    <a href="https://icons8.com/icon/26144/back-to"></a>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Styles/index-Signup.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="Login">
+        <div class="backdiv tooltip">
+            <a href="index.html"><i class="fas fa-chevron-circle-left" id="back"></i><span class="tooltiptext">Back to
+                    main menu?</span></a>
+        </div>
+        <div class="Logo"></div>
+        <div class="Title">Hello New Friend</div>
+        <div class="Fields">
+            <div class="nameSurname">
+                <div class="name"><img src="https://img.icons8.com/pastel-glyph/64/000000/person-male--v2.png" />
+                    <input type="username" class="user-inpur" placeholder="Name" />
+                </div>
+                <div class="surname">
+                    <input type="username" class="user-inpur" placeholder="Surname" />
+                </div>
+            </div>
+            <div class="username"><img
+                    src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-mail-basic-ui-elements-flatart-icons-outline-flatarticons.png" />
+                <input type="email" class="user-inpur" placeholder="E-mail" />
+            </div>
+            <div class="password"><img src="https://img.icons8.com/windows/32/000000/lock.png" />
+                <input type="password" class="pass-inpur" placeholder="Password" />
+            </div>
+        </div>
+        <button class="Singin-Button">Sign up</button>
+        <div class="Link">
+            Have already an account? – <a href="index-login.html">Sign in</a>
+        </div>
+    </div>
+
+    <div id="preloader">
+        <div class="box">
+            <div class="b b1"></div>
+            <div class="b b2"></div>
+            <div class="b b3"></div>
+            <div class="b b4"></div>
+        </div>
+    </div>
+    <script>
+
+        window.onload = function () {
+
+            let preloader = document.getElementById('preloader');
+            preloader.classList.add('hide-preloader');
+            setTimeout(function () {
+                preloader.classList.add('preloader-hidden');
+            }, 950)
+        }
+    </script>
+
+</body>
+
+</html>
